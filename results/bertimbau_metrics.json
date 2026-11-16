@@ -1,0 +1,42 @@
+{
+  "model": "bertimbau_finetuned",
+  "best_params": {
+    "base_model": "neuralmind/bert-base-portuguese-cased",
+    "max_length": 128,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "max_epochs": 4,
+    "best_epoch": 2.0,
+    "class_weights": true
+  },
+  "validation_macro_f1": 0.7015,
+  "test_macro_f1": 0.6888,
+  "test_accuracy": 0.8089,
+  "test_per_class": {
+    "negative": {
+      "precision": 0.848,
+      "recall": 0.7967,
+      "f1-score": 0.8216
+    },
+    "neutral": {
+      "precision": 0.2539,
+      "recall": 0.4954,
+      "f1-score": 0.3358
+    },
+    "positive": {
+      "precision": 0.9645,
+      "recall": 0.8595,
+      "f1-score": 0.909
+    }
+  },
+  "majority_class_val_macro_f1": 0.2563,
+  "train_seconds_gpu": 312.3,
+  "gpu": "Tesla T4",
+  "latency_ms_single_cpu": 58.851,
+  "latency_ms_single_gpu": 10.117,
+  "throughput_reviews_per_s_cpu": 17,
+  "throughput_reviews_per_s_gpu": 868,
+  "model_size_mb": 435.73,
+  "n_train": 29175,
+  "n_test": 3647
+}

@@ -1,0 +1,38 @@
+{
+  "model": "tfidf_logreg",
+  "best_params": {
+    "clf__C": 0.5,
+    "clf__class_weight": "balanced",
+    "tfidf__ngram_range": [
+      1,
+      2
+    ]
+  },
+  "validation_macro_f1": 0.6795,
+  "test_macro_f1": 0.6606,
+  "test_accuracy": 0.7902,
+  "test_per_class": {
+    "negative": {
+      "precision": 0.7681,
+      "recall": 0.813,
+      "f1-score": 0.7899
+    },
+    "neutral": {
+      "precision": 0.2396,
+      "recall": 0.4037,
+      "f1-score": 0.3007
+    },
+    "positive": {
+      "precision": 0.9548,
+      "recall": 0.8353,
+      "f1-score": 0.8911
+    }
+  },
+  "majority_class_val_macro_f1": 0.2563,
+  "train_seconds_cpu": 6.63,
+  "latency_ms_single_cpu": 1.141,
+  "throughput_reviews_per_s_cpu": 39158,
+  "model_size_mb": 1.61,
+  "n_train": 29175,
+  "n_test": 3647
+}
